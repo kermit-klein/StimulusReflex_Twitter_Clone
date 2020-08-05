@@ -1,0 +1,9 @@
+<div class="container my-10 mx-auto">
+    <h1 class="text-4xl-font-bold">Zamazingo
+        <small class="text-lg font-light">CableReady+StimulusReflex</small>
+    </h1>
+    <%=render "form" %>
+    <div id="feed">
+        <%= render partial: "post", collection:@posts %>
+    </div>
+</div>
