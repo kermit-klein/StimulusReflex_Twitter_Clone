@@ -1,16 +1,18 @@
 <!DOCTYPE html>
 <html>
-  <head>
+
+<head>
     <title>StimulusReflexTwitterClone</title>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
-    <%= #stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <% #stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
-  </head>
+</head>
 
-  <body>
+<body>
     <%= yield %>
-  </body>
+</body>
+
 </html>
