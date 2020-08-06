@@ -3,6 +3,6 @@ import CableReady from "cable_ready";
 
 consumer.subscriptions.create("FeedChannel", {
   received(data) {
-    if (data.CableReady) CableReady.perform(data.operations);
+    if (data.cableReady) CableReady.perform(data.operations);
   },
 });
