@@ -2,7 +2,7 @@
     <div class="mb-3 text-lg"><%= post.body%></div>
     <span class="opacity-50">
         <strong><%=post.username%></strong>
-        <small><%=time_ago_in_words post.created.at%> ago</small>
+        <small><%=time_ago_in_words post.created_at%> ago</small>
     </span>
     <%= link_to "#", class: "ml-2 text-sm text-blue-500 underline" do%>
     <%=tag.span post.reposts_count, id: dom_id(post,"reposts")%>
